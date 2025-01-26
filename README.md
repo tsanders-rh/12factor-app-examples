@@ -62,7 +62,7 @@ Make sure you have the following installed:
 * Create a user badapp_user with the password badapp_password.
 * Grant the user full control of the database.
 * Run the following SQL commands to create tables:
-  ```bash
+```bash
   CREATE TABLE users (
     id INT AUTO_INCREMENT PRIMARY KEY,
     username VARCHAR(50) NOT NULL,
