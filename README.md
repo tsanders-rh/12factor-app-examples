@@ -69,7 +69,7 @@ Make sure you have the following installed:
     email VARCHAR(100) NOT NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
-```bash
+
 CREATE TABLE logs (
     id INT AUTO_INCREMENT PRIMARY KEY,
     log_message TEXT NOT NULL,
