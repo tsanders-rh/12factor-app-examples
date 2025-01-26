@@ -1,13 +1,47 @@
-This is an example of a multi-file Java application that intentionally violates the 12-Factor App methodology. Each factor is neglected in some way to demonstrate bad practices. The purpose is to showcase antipatterns, so don't use this in production!
+# **BadApp**
 
-I'll organize the code into multiple files. The following violations will be introduced:
+BadApp is a Java-based application designed to demonstrate what not to do when developing a cloud-native application. It intentionally violates the [12-factor app principles](https://12factor.net/) to highlight common anti-patterns and pitfalls in modern software development.
 
-* Hard-coded configuration.
-* Mixing of build and runtime environments.
-* Dependency version mismatch.
-* Stateful application.
-* Logs written to files.
-* Application tied to a specific environment.
-* Poor scaling strategy (no concurrency).
-* Single point of failure (monolith).
-* Secrets committed in the codebase.
+---
+
+## **Features**
+- Hardcoded configurations.
+- Poor dependency management.
+- Tight coupling of environments and code.
+- Lack of scalability or modularity.
+
+---
+
+## **Table of Contents**
+1. [Getting Started](#getting-started)
+2. [Prerequisites](#prerequisites)
+3. [Installation](#installation)
+4. [Database Setup](#database-setup)
+5. [Running the Application](#running-the-application)
+6. [Known Issues](#known-issues)
+7. [License](#license)
+
+---
+
+## **Getting Started**
+
+BadApp is built with Java and Maven. To get started, clone this repository, set up the database, and compile the application.
+
+---
+
+## **Prerequisites**
+
+Make sure you have the following installed:
+- Java 17+
+- Maven 3.6+
+- MySQL 5.7+ or 8.0+
+- Bash (for running the setup scripts on Linux/macOS)
+
+---
+
+## **Installation**
+
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/your-repo/badapp.git
+   cd badapp
