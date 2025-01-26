@@ -50,3 +50,29 @@ Make sure you have the following installed:
    mvn clean package
 3. Verify that the build was successful and that the JAR file is located in the target/ directory.
 
+---
+
+## **Database Setup**
+
+1. Install and configure MySQL by running the provided setup script:
+   ```bash
+   sudo ./setup_database.sh
+2. Alternatively, setup the database manually:
+* Create a database named badapp_db.
+* Create a user badapp_user with the password badapp_password.
+* Grant the user full control of the database.
+* Run the following SQL commands to create tables:
+  ```bash
+  CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50) NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE logs (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    log_message TEXT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
