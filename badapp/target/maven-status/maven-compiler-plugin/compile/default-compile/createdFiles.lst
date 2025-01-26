@@ -1,0 +1,5 @@
+com/example/badapp/Logger.class
+com/example/badapp/App.class
+com/example/badapp/Config.class
+com/example/badapp/DatabaseConnection.class
+com/example/badapp/Service.class
